@@ -19,6 +19,7 @@
 </head>
 <body>
     <header class="page-header">
+    <div class="container">
     <nav class="main-navigation">
     <a class="logo" href="./img/chocolate.svg">
         <span class="text-italic">SIMPLY</span>  CHOCOLATE <img src="./img/chocolate.svg" alt="chocolate icon">
@@ -40,16 +41,22 @@
         <li><a href="" target="_blank" rel="noopener noreferrer">facebook</a></li>
         <li><a href="" target="_blank" rel="noopener noreferrer">twitter</a></li>
     </ul>
+    </div>
     </header>
     <main>
-        <section>
-            <h1>Treat yourself or a loved one to our finest ingredients for a moment 
-            of pure delight!
-            </h1>
-            <button type="button">Buy now</button>
-            <a href="">How it’s made</a>
-            <a href="">scroll down</a>
+    <!-- Hero Section-->
+        <section class="hero">
+            <div class="container hero-container">
+             <h1 class="main-title">Treat yourself or a loved one to our finest ingredients for a moment 
+                of pure delight!
+             </h1>
+             <button class="buy-now-btn" type="button">Buy now</button>
+             <a class="how-made" href="">How it’s made</a>
+             <a class="scroll-down-link" href="">scroll down</a>
+            </div>
         </section>
+        <!-- Hero Section-->
+        <!-- Benefits Section-->
         <section>
             <h2 hidden>Features</h2>
             <ul>
@@ -83,7 +90,7 @@
         </section>
 
         <section>
-            <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
+            <h2 class="section-title" class="ingridients-section-title">IT ALL ADDS UP TO ONE <br>EXCEPTIONAL<span class="accent-color">TASTE</span> SENSATION </h2>
             <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is 
                 in the details. From the sourcing of the finest ingredients to the careful crafting 
                 of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
@@ -153,10 +160,9 @@
                 </li>
             </ul>
         </section>
-
         <section>
-        <h2>HOW IT’S made?</h2>
-        <img 
+        <h2 class="section-title">HOW IT’S <span class="accent-color">MADE?</span></h2>
+        <img
         src="./img/image-8.jpg" 
         alt="liquid" 
         width="600" 
@@ -192,7 +198,7 @@
         </section>
 
         <section>
-            <h2>OUR PRODUCTS</h2>
+            <h2 section-title>OUR PRODUCTS</h2>
         <ul>
             <li>
                 <img 
@@ -277,7 +283,7 @@
         </ul>
         </section>
         <section>
-            <h2>TOP SELLERS</h2>
+            <h2 section-title>TOP SELLERS</h2>
                 <ul>
                     <li>
                         <img 
@@ -305,49 +311,63 @@
                     </li>
                 </ul>
         </section>
-        <section>
-            <h2>Chocolate is loved</h2>
-            <ul>
-                <li>
-                    <img 
-                    src="./img/1-min.jpg" 
-                    alt="person 1"
+        <!-- ========== Reviews section ========== -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+            <h2 class="section-title">
+                <span class="accent-color">Chocolate</span> is loved
+            </h2>
+            <ul class="reviews-list list">
+                <li class="reviews-list-item">
+                    <img
+                    class="reviews-list-avatar" 
+                    src="./img/1-min.jpg"
+                    alt="Victoria Dobrzhanska"
                     width="80" 
-                    height="80">
-                    <h3>Victoria Dobrzhanska</h3>
-                    <p>
-                        I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
+                    height="80"
+                    >
+                    <h3 class="reviews-list-fullname">Victoria Dobrzhanska</h3>
+                    <p class="reviews-list-text">
+                        I love this chocolate bar. Perfect combination of light crispy wafer, 
+                        covered in a thin layer chocolate.
                     </p>
                 </li>
-                <li>
-                    <img 
+                <li class="reviews-list-item">
+                    <img
+                    class="reviews-list-avatar" 
                     src="./img/2-min.jpg" 
-                    alt="person 2"
+                    alt="Nazar Babenko"
                     width="80" 
-                    height="80">
-                    <h3>Nazar Babenko</h3>
-                    <p>
-                        This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.
+                    height="80"
+                    >
+                    <h3 class="reviews-list-fullname">Nazar Babenko</h3>
+                    <p class="reviews-list-text">
+                        This chocolate confection is a delight! A delight! The wafer is light and crisp, 
+                        the hazelnut cream is smooth, and the chocolate is good.
                     </p>
                 </li>
-                <li>
-                    <img 
+                <li class="reviews-list-item">
+                    <img
+                    class="reviews-list-avatar" 
                     src="./img/3-min.jpg" 
-                    alt="person 3"
+                    alt="Olena Kampusch"
                     width="80" 
                     height="80">
-                    <h3>Olena Kampusch</h3>
-                    <p>
-                        Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+                    <h3 class="reviews-list-fullname">Olena Kampusch</h3>
+                    <p class="reviews-list-text">
+                        Chocolate is a family favourite treat. Love the delicious smooth chocolate and 
+                        the creaminess inside. The wafer is soft but crunchy.
                     </p>
                 </li>
             </ul>
-            <button type="button">Leave  a review</button>
+            <button class="leave-review-btn" type="button">Leave  a review</button>
+        </div>
         </section>
+        <!-- ========== Reviews section ========== -->
     </main>
     <footer>
-        <p>
-            Chocolate a delicious cure for a bad day
+        <p class="footer-title">
+            <span class="accent-color">Chocolate</span> a delicious cure for a bad day
         </p>
         <p>
             Social networks
