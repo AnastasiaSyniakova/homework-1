@@ -19,10 +19,18 @@
 </head>
 <body>
     <header class="page-header">
-    <div class="container">
+    <div class="container page-header-container">
     <nav class="main-navigation">
     <a class="logo" href="./img/chocolate.svg">
-        <span class="text-italic">SIMPLY</span>  CHOCOLATE <img src="./img/chocolate.svg" alt="chocolate icon">
+        <span class="text-italic">SIMPLY</span>&nbsp;CHOCOLATE
+        <svg 
+        class="logo-icon" 
+        width="24" 
+        height="24"
+        aria-label="simply chocolate logotype"
+        >
+            <use href="./img/icons/sprite.svg#icon-chocolate"></use>
+        </svg>
     </a>
     <ul class="menu">
         <li class="menu-item">
@@ -36,10 +44,25 @@
         </li>
     </ul>
     </nav>
-    <ul>
-        <li><a href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">facebook</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">twitter</a></li>
+    <ul class="social-list">
+        <li class="social-list-item">
+            <a href="" class="social-list-link">
+                <svg class="social-list-icon" 
+                width="24" 
+                height="24" 
+                aria-label="instagram icon">
+                <use href="./img/icons/sprite.svg#icon-instagram">
+            </use></svg>
+            </a></li>
+        <li class="social-list-item">
+            <a href="" class="social-list-link">
+                <svg class="social-list-icon" 
+                width="24" 
+                height="24" 
+                aria-label="twitter icon">
+                <use href="./img/icons/sprite.svg#icon-twitter">
+            </use></svg>
+            </a></li>
     </ul>
     </div>
     </header>
@@ -47,118 +70,108 @@
     <!-- Hero Section-->
         <section class="hero">
             <div class="container hero-container">
-             <h1 class="main-title">Treat yourself or a loved one to our finest ingredients for a moment 
+             <h1 class="main-title">
+                Treat yourself or a loved one to our finest ingredients for a moment 
                 of pure delight!
              </h1>
+             <div class="hero-bottom-block">
              <button class="buy-now-btn" type="button">Buy now</button>
-             <a class="how-made" href="">How it’s made</a>
-             <a class="scroll-down-link" href="">scroll down</a>
+             <a class="how-made" href="#how-made">How it’s made</a>
+             <a class="scroll-down-link" href="#benefits">scroll down</a>
+            </div>
             </div>
         </section>
         <!-- Hero Section-->
         <!-- Benefits Section-->
-        <section>
-            <h2 hidden>Features</h2>
-            <ul>
-                <li>
-                    <h3>Unsurpassed taste</h3>
-                    <p>
+        <section class="benefits" id="benefits">
+            <div class="container benefits-container">
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="benefits-list">
+                <li class="benefits-list-item">
+                    <h3 class="benefits-list-title">Unsurpassed taste</h3>
+                    <p class="benefits-list-text">
                         Crafted with the finest quality cocoa beans and a dedication to perfection, 
                     each bite is a decadent experience that simply cannot be matched. 
                     Savor the richness and complexity of our Unsurpassed Taste and discover a 
                     new level of chocolate bliss.
                     </p>
                 </li>
-                <li>
-                    <h3>Affordable price</h3>
-                    <p>
+                <li class="benefits-list-item">
+                    <h3 class="benefits-list-title">Affordable price</h3>
+                    <p class="benefits-list-text">
                         Indulge in high-quality chocolate without breaking the bank with 
                     Simply Chocolate's selection of affordable treats. Enjoy mouth-watering 
                     truffles and velvety chocolate bars without sacrificing taste or quality. 
                     Browse our selection and indulge in affordable luxury today.
                     </p>
                 </li>
-                <li>
-                    <h3>Own production</h3>
-                    <p>
+                <li class="benefits-list-item">
+                    <h3 class="benefits-list-title">Own production</h3>
+                    <p class="benefits-list-text">
                         We take pride in our own production process, ensuring that every step 
                     is carefully crafted to perfection. From selecting the finest ingredients 
                     to handcrafting each piece, our attention to detail is evident in every bite.
                     </p>
                 </li>
             </ul>
+        </div>
         </section>
-
-        <section>
-            <h2 class="section-title" class="ingridients-section-title">IT ALL ADDS UP TO ONE <br>EXCEPTIONAL<span class="accent-color">TASTE</span> SENSATION </h2>
-            <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is 
+        <!-- Ingredients section -->
+        <section class="ingredients">
+            <div class="container">
+            <h2 class="section-title" class="ingredients-section-title">IT ALL ADDS UP TO ONE 
+                <br>EXCEPTIONAL<span class="accent-color">&nbsp;TASTE</span>&nbsp;SENSATION
+            </h2>
+            <p class="ingredients-description">
+                At Simply Chocolate, we believe that the secret to exceptional chocolate is 
                 in the details. From the sourcing of the finest ingredients to the careful crafting 
-                of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
-            <ul>
-                <li>
-                    <img 
-                    src="./img/img-1.jpg" 
+                of each individual piece, every step of our process adds up to one exceptional taste sensation.
+            </p>
+            <ul class="ingredients-list list">
+                <li class="ingredients-list-item">
+                    <img class="ingredients-list-image" 
+                    src="./img/all-img/img-1.jpg"
                     alt="MILK CHOCOLATE" 
                     width="214" 
-                    height="160" 
+                    height="160"
                     />
-                    <h3>MILK CHOCOLATE</h3>
+                    <h3 class="ingredients-list-title">MILK CHOCOLATE</h3>
+                    <div class="ingredient-overlay">
+                    <h3 class="ingredient-overlay-title">
+                        <ul class="ingredient-overlay-categories"></ul>
+                        <p class="ingredient-overlay-text"></p>
+                    </h3>
+                    </div>
                 </li>
-                <li>
-                    <img 
-                    src="./img/img-2.jpg" 
+                <li class="ingredients-list-item">
+                    <img class="ingredients-list-image" 
+                    src="./img/all-img/img-2.jpg" 
                     alt="MILK" 
                     width="214" 
                     height="160" 
                     />
-                    <h3>MILK</h3>
+                    <h3 class="ingredients-list-title">MILK</h3>
                 </li>
-                <li>
-                    <img 
-                    src="./img/img-3.jpg" 
+                <li class="ingredients-list-item">
+                    <img class="ingredients-list-image" 
+                    src="./img/all-img/img-3.jpg" 
                     alt="NUTS" 
                     width="214" 
                     height="160" 
                     />
-                    <h3>NUTS</h3>
+                    <h3 class="ingredients-list-title">NUTS</h3>
                 </li>
-                <li>
-                    <img 
-                    src="./img/img-4.jpg" 
+                <li class="ingredients-list-item">
+                    <img class="ingredients-list-image"
+                    src="./img/all-img/img-4.jpg" 
                     alt="SEMI - SWEET CHOCOLATE" 
                     width="214" 
                     height="160" 
                     />
-                    <h3>SEMI - SWEET CHOCOLATE</h3>
-                </li>
-                <li>
-                    <img 
-                    src="./img/img-5.jpg" 
-                    alt="CACAO" 
-                    width="214" 
-                    height="160" 
-                    />
-                    <h3>CACAO</h3>
-                </li>
-                <li>
-                    <img 
-                    src="./img/img-6.jpg" 
-                    alt="RASPBERRY" 
-                    width="214" 
-                    height="160" 
-                    />
-                    <h3>RASPBERRY</h3>
-                </li>
-                <li>
-                    <img 
-                    src="./img/img-7.jpg" 
-                    alt="COCONUT" 
-                    width="214" 
-                    height="160" 
-                    />
-                    <h3>COCONUT OIL</h3>
+                    <h3 class="ingredients-list-title">SEMI - SWEET CHOCOLATE</h3>
                 </li>
             </ul>
+        </div>
         </section>
         <section>
         <h2 class="section-title">HOW IT’S <span class="accent-color">MADE?</span></h2>

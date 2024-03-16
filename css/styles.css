@@ -59,14 +59,111 @@ body {
 
 
 
+/* ========= Header styles ========= */
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+}
+
+.text-italic {
+    font-style: italic;
+  }
+
+.menu {
+    display: flex;
+    column-gap: 24px;
+}
+
+.menu-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition: color 250ms linear;
+}
+   
+   .menu-link:hover,
+   .menu-link:focus {
+    color: #fd9222;
+   }
+   
+.logo {
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 1.11;
+ letter-spacing: -0.03em;
+ display: flex;
+ align-items:center;
+}
+
+.logo-icon{
+    margin-left: 4px;
+    column-gap: 18px;
+}
+
+.social-list{
+    display: flex;
+    column-gap: 18px;
+}
+
+.social-list-link {
+    display: block;
+    fill: #111;
+    transition: stroke 250ms linear;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    fill: #fd9222;
+}
+
+.social-list-icon{
+    fill: none;
+    stroke: #111;
+    transition: stroke 250ms linear;
+}
+
+.social-list-item:hover .social-list-icon,
+.social-list-item:focus .social-list-icon {
+    stroke: #fd9222;
+}
+
+/* ========= Header styles ========= */
+
 /* ========= Hero Section Styles ========= */
+
+.hero {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: 
+    linear-gradient(
+    rgba(30, 24, 35, 0.4),
+    rgba(30, 24, 35, 0.4)
+    ),
+    url(../img/hero-section/bg.jpg);
+    border-radius: 30px;
+    background-size: cover;
+    background-color: #303030;
+}
 
 .hero-container {
     padding-top: 381px;
     padding-bottom: 40px;
     padding-left: 56px;
     padding-right: 56px;
-    background-color: #303030;
 }
 
 .main-title {
@@ -77,6 +174,11 @@ body {
     letter-spacing: -0.03em;
     color: #fff;
     margin-bottom: 32px;
+}
+
+.hero-bottom-block{
+    display: flex;
+    align-items: center;
 }
 
 .buy-now-btn {
@@ -99,48 +201,104 @@ body {
     color: #fd9222;
 }
 
+.how-made {
+    min-width: 183px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 14px;
+    margin-right: 585px;
+}
 
-.main-navigation {
+.scroll-down-link {
+    color: #fff;
+}
+
+/* -- Benefits Section -- */
+
+.benefits-container {
     display: flex;
-    justify-content: space-between;
-}
+    align-items: center;
 
-.menu {
-    display: flex;
-    column-gap: 24px;
-}
-
-.logo {
- font-weight: 700;
- font-size: 18px;
- line-height: 1.11;
- letter-spacing: -0.03em;
-}
-
-.text-italic {
-  font-style: italic;
-}
-
-.menu-link {
- display: block;
- padding-top: 28px;
- padding-bottom: 28px;
- font-family: "Montserrat", sans-serif;
- font-weight: 500;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: -0.02em;
-}
-
-.menu-link:hover,
-.menu-link:focus {
- color: #fd9222;
 }
 
 
-.ingridients-section-title{
+
+
+/* -- Ingredients section -- */
+
+.ingredients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ingredients-section-title {
+    max-width: 412px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 28px;
 }
+
+.ingredients-description {
+    min-width: 486px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.ingredients-list-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 19px;
+}
+
+.ingredients-list-item {
+    width: calc((100%-57px) / 4);
+    padding: 32px 28px;
+    border-radius: 15px;
+    border: 1px solid #fd9222;
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+    color:#ffffff;
+    background-color:#fd9222;
+    }
+
+.ingredients-list-item:nth-child(even) {
+    background-color:#ffffff;
+    }
+
+.ingredients-list-item:nth-child(4n + 3) {
+    color: #ffffff;
+    background-color: #1e1823;
+    border-color: #1e1823;
+    }
+
+.ingredients-list-img {
+    margin-bottom: 36px;
+}
+
+.ingedient-overlay {
+    
+}
+
 
 
 /* Reviews section styles */
